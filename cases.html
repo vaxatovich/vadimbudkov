@@ -5,56 +5,62 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#5630cd">
 <meta name="robots" content="noindex,follow">
-<title>Кейсы — страница в разработке | Вадим Будьков</title>
-<meta name="description" content="Кейсы Вадима Будькова в процессе оформления. Пока можно посмотреть примеры публикаций и познакомиться с профессиональным опытом.">
+<title>Кейсы — Вадим Будьков</title>
+<meta name="description" content="Упс. Кейсы еще в разработке.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="stylesheet" href="styles.css">
 <style>
-.cases-placeholder{min-height:calc(100svh - 146px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:66px 22px 86px;background:#fffdfb;background-image:repeating-linear-gradient(16deg,rgba(128,180,255,.11) 0px,rgba(128,180,255,.11) 2px,transparent 2px,transparent 29px),repeating-linear-gradient(-24deg,rgba(253,99,185,.07) 0px,rgba(253,99,185,.07) 2px,transparent 2px,transparent 43px)}
-.cases-placeholder:before,.cases-placeholder:after{content:"";position:absolute;width:245px;height:245px;border:7px solid #f7d93e;border-left-color:transparent;border-bottom-color:transparent;border-radius:51% 49% 47% 53%;opacity:.5;pointer-events:none}.cases-placeholder:before{top:13%;left:-160px;transform:rotate(-18deg)}.cases-placeholder:after{right:-155px;bottom:15%;transform:rotate(47deg)}
-.cases-kicker{display:inline-block;border:3px dashed #f6c830;border-radius:15px;padding:7px 20px;transform:rotate(-3deg);font-weight:850;color:#5c37bf;background:#fff9e7;font-size:15px;letter-spacing:.02em}
-.cases-placeholder h1{color:#512cbe;font-family:'Comic Sans MS','Trebuchet MS',sans-serif;letter-spacing:.01em;font-size:clamp(56px,9vw,110px);line-height:1.09;margin:26px 0 7px;transform:rotate(-2deg)}
-.cases-underline{width:min(360px,68vw);height:10px;background:#ed45af;border-radius:90% 20% 40% 95%;transform:rotate(-2deg);margin:0 auto 34px}
-.cases-figure{max-width:290px;width:48vw;min-width:170px;position:relative;display:block;margin:0 auto 22px}
-.cases-message{font-family:'Comic Sans MS','Trebuchet MS',sans-serif;font-size:clamp(25px,4vw,39px);font-weight:800;color:#4733aa;line-height:1.26;margin:0 0 10px}
-.cases-copy{color:#4a4280;font-size:clamp(16px,2vw,19px);line-height:1.6;max-width:580px;margin:0 auto 29px}
-.cases-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.cases-actions a{border-radius:22px 18px 24px 20px;padding:13px 20px;text-decoration:none;font-weight:850;font-size:16px;border:3px solid #5832cb;transition:transform .2s,box-shadow .2s}
-.cases-actions a:hover{transform:translateY(-3px)}.cases-actions a:focus-visible{outline:4px solid #ffcc00;outline-offset:3px}
-.cases-actions a:first-child{color:white;background:#5c32c6;box-shadow:4px 4px 0 #eec9fd}
-.cases-actions a:last-child{color:#512cbe;background:white;box-shadow:4px 4px 0 #e9dafd}
-.cases-nav{background:repeating-linear-gradient(-7deg,#5428ca 0 3px,#4824b3 3px 5px,#5d39d0 5px 9px);display:flex;align-items:center;justify-content:center;gap:clamp(16px,5vw,80px);padding:18px 25px;flex-wrap:wrap}
-.cases-nav a{font-size:clamp(15px,2vw,21px);font-weight:750;text-decoration:none;color:white}.cases-nav a[aria-current=page]{text-decoration:underline;text-decoration-color:#f583ca;text-decoration-thickness:4px;text-underline-offset:8px}
-.cases-nav a:last-child{border:2px solid white;border-radius:22px;padding:7px 14px}
-@media(prefers-reduced-motion:reduce){.cases-actions a{transition:none}}
+:root{--case-purple:#5724c8;--case-pink:#ed3fb5;--case-yellow:#ffd328}
+*{box-sizing:border-box}
+body{margin:0;background:#fffdfb}
+.cases-nav{min-height:75px;padding:10px max(22px,5vw);display:flex;align-items:center;justify-content:center;gap:clamp(24px,6vw,94px);position:relative;z-index:2;background:repeating-linear-gradient(-9deg,#5f31d0 0 3px,#4e20bd 3px 6px,#6737d8 6px 8px);border-bottom:3px solid #703bdd;color:white;font-family:'Comic Neue','Comic Sans MS','Trebuchet MS',cursive}
+.cases-nav a{text-decoration:none;font-size:clamp(17px,1.8vw,25px);font-weight:900;color:white;line-height:1.15;white-space:nowrap;transform:rotate(-1deg)}
+.cases-nav a[aria-current="page"]{text-decoration:underline;text-decoration-color:#f48dcd;text-decoration-thickness:5px;text-underline-offset:9px}
+.cases-nav a:last-child{border:3px solid #fff;border-radius:50px 44px 48px 46px;padding:9px 19px;transform:rotate(-2deg)}
+.cases-nav a:hover{color:#fff1b8}
+.cases-nav a:focus-visible{outline:4px dashed #f8d437;outline-offset:5px}
+.cases-surface{min-height:calc(100svh - 75px);overflow:hidden;position:relative;display:flex;align-items:center;justify-content:center;isolation:isolate;padding:65px 24px 100px;background:#fffefb;background-image:repeating-linear-gradient(20deg,rgba(136,183,251,.075) 0 2px,transparent 2px 29px),repeating-linear-gradient(-20deg,rgba(242,118,196,.067) 0 2px,transparent 2px 30px)}
+.cases-surface:before{content:"";position:absolute;left:-96px;top:17%;width:170px;height:280px;border:7px solid rgba(243,204,41,.67);border-right:0;border-bottom:0;border-radius:52% 12% 0 0;transform:rotate(-29deg);pointer-events:none}
+.cases-content{width:100%;max-width:1120px;display:flex;align-items:center;flex-direction:column;text-align:center;position:relative;z-index:1}
+.cases-heading{margin:0;color:#5630c6;font-family:'Comic Neue','Comic Sans MS','Trebuchet MS',cursive;font-size:clamp(64px,10vw,152px);font-weight:1000;line-height:1.08;letter-spacing:-.035em;transform:rotate(-2deg);text-shadow:1px 1px rgba(100,53,222,.2),-1px 0 rgba(100,53,222,.22)}
+.cases-underline{height:10px;width:min(450px,65vw);margin:10px auto 26px;background:repeating-linear-gradient(170deg,#ec43af 0 5px,#fa6ac7 5px 7px);border-radius:60% 35% 55% 42%;transform:rotate(-2.5deg)}
+.cases-illustration{width:min(310px,45vw);margin:0 auto 13px;display:block}
+.cases-caption{margin:0;color:#5433b5;font-family:'Comic Neue','Comic Sans MS','Trebuchet MS',cursive;font-weight:900;font-size:clamp(27px,4vw,58px);line-height:1.25;letter-spacing:-.018em;transform:rotate(-1deg);text-wrap:balance}
+@media(max-width:680px){.cases-nav{min-height:65px;padding:12px 10px;gap:clamp(12px,3vw,28px);justify-content:space-between}.cases-nav a{font-size:clamp(12px,3.4vw,18px)}.cases-nav a:last-child{font-size:clamp(11px,3vw,17px);padding:7px 8px;border-width:2px}.cases-surface{min-height:calc(100svh - 65px);padding:38px 16px 70px}.cases-heading{font-size:clamp(58px,15vw,104px)}.cases-underline{margin:12px auto 26px;height:8px}.cases-illustration{width:min(260px,66vw);margin-bottom:20px}.cases-caption{font-size:clamp(26px,7vw,41px)}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">К содержимому</a>
 <nav class="cases-nav" aria-label="Главное меню">
 <a href="index.html">Главная</a>
 <a href="cases.html" aria-current="page">Кейсы</a>
 <a href="about.html">Обо мне</a>
 <a href="https://t.me/borisaguero" target="_blank" rel="noopener noreferrer">Обсудить проект ↗</a>
 </nav>
-<main class="cases-placeholder">
-<span class="cases-kicker">Черновики, цифры и заметки</span>
-<h1>Кейсы</h1>
+<main id="main" class="cases-surface">
+<div class="cases-content">
+<h1 class="cases-heading">Кейсы</h1>
 <div class="cases-underline" aria-hidden="true"></div>
-<svg class="cases-figure" viewBox="0 0 330 228" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Детский рисунок блокнота с карандашом и надписью «В процессе»">
-<path d="M60 26Q49 14 34 38L26 189Q25 207 47 208L231 215Q260 214 260 188L253 35Q252 19 227 20Z" fill="#fffaf5" stroke="#623acc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M66 33L68 208M90 62L217 62M90 97L212 97M90 132L185 132M90 166L153 166" stroke="#9d84e1" stroke-width="4" stroke-linecap="round" stroke-dasharray="7 6"/>
-<path d="M208 180L276 99L297 115L228 198Z" fill="#ffd53d" stroke="#4e29bf" stroke-width="6" stroke-linejoin="round"/>
-<path d="M208 180L207 204L228 198Z" fill="#ffd5a7" stroke="#4e29bf" stroke-width="5"/>
-<path d="M207 204L210 192L219 200" fill="#40305e"/>
-<path d="M276 99L289 83Q294 80 299 85L310 95Q314 100 309 107L297 115" fill="#f48bbf" stroke="#5630cd" stroke-width="5"/>
-<path d="M29 56l-17-10M20 94H3M25 118L5 130M268 37L281 16M298 45L316 32" stroke="#f0cd21" stroke-width="6" stroke-linecap="round"/>
+<svg class="cases-illustration" viewBox="0 0 340 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+<filter id="crayon" x="-8%" y="-8%" width="116%" height="116%"><feTurbulence baseFrequency=".035" numOctaves="2" seed="3" result="t"/><feDisplacementMap in="SourceGraphic" in2="t" scale="1.5"/></filter>
+<pattern id="scribble" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(15)"><path d="M1 0V7" stroke="#f4d3ff" stroke-width="2"/></pattern>
+</defs>
+<g filter="url(#crayon)" stroke-linecap="round" stroke-linejoin="round">
+<path d="M79 30 246 25 256 201 77 207 76 34" stroke="#6d43d7" stroke-width="7" fill="#fffefd"/>
+<path d="M85 42 239 37 250 190 87 197Z" fill="url(#scribble)" opacity=".46"/>
+<path d="M89 36V202" stroke="#b48ae6" stroke-width="4" stroke-dasharray="7 9"/>
+<path d="M112 75 202 74M110 108 194 108M111 141 185 139M111 173 155 171" stroke="#956ad5" stroke-width="4.5" stroke-dasharray="9 7"/>
+<path d="M248 168 296 100 316 113 270 184 246 196Z" fill="#ffe12b" stroke="#6833cb" stroke-width="6"/>
+<path d="M296 100 306 86 325 101 316 114" fill="#ffa6cc" stroke="#6833cb" stroke-width="6"/>
+<path d="M246 196 248 168 270 184Z" fill="#fff4c6" stroke="#6833cb" stroke-width="5"/>
+<path d="M246 196 251 184 256 192Z" fill="#6833cb"/>
+<path d="M52 81 36 76M49 114 29 119M60 48 48 34M274 41 286 23M297 70 314 60" stroke="#f9d11c" stroke-width="6"/>
+</g>
 </svg>
-<h2 class="cases-message">Страница в разработке!</h2>
-<p class="cases-copy">Собираю проекты, решения и результаты в подробные разборы. Пока можно посмотреть мои публикации и карьерный путь.</p>
-<div class="cases-actions">
-<a href="about.html#samples">Примеры контента ↗</a>
-<a href="about.html#career">Мой опыт ↗</a>
+<p class="cases-caption">Упс. Кейсы еще в разработке</p>
 </div>
 </main>
-<footer class="footer"><span>© 2026 Вадим Будьков · Контент-маркетинг для криптопроектов</span><a href="https://t.me/borisaguero" target="_blank" rel="noopener noreferrer">Написать в телеграм ↗</a></footer>
-</body></html>
+</body>
+</html>
