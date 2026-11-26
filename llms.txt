@@ -9,8 +9,8 @@
 - Контакт: https://t.me/borisaguero
 
 ## Основные страницы
-- [Главная](https://vaxatovich.github.io/vadimbudkov/): специализация и контакты.
-- [Обо мне](https://vaxatovich.github.io/vadimbudkov/about.html): карьерный путь, результаты, скриншоты статистики и примеры контента.
+- [Главная](https://vadimbudkov.vercel.app/): специализация и контакты.
+- [Обо мне](https://vadimbudkov.vercel.app/about.html): карьерный путь, результаты, скриншоты статистики и примеры контента.
 
 ## Примеры опубликованных материалов
 - [ИИ и разработка приложений: проблема с востребованностью](https://vc.ru/ai/2977378-ii-i-razrabotka-prilozheniy-problema-s-vostrebovannostyu)

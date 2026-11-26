@@ -15,11 +15,11 @@
 
 ## Production URL
 
-**Пока в SEO-файлах стоит:** https://vaxatovich.github.io/vadimbudkov/
+**Основной адрес сайта:** https://vadimbudkov.vercel.app/
 
-Этот URL — конфигурация исходников, а не подтверждение фактической публикации.
+Vercel автоматически развертывает обновления из ветки `main`.
 
-**Перед добавлением сайта в Search Console** синхронизировать URL во всех SEO-файлах с реально открывающимся публичным адресом (например, Vercel). Порядок — в `SEO_SETUP.md`.
+Canonical, sitemap и robots настроены для Vercel. Перед добавлением в Search Console проверьте индексацию URL через инспектор Google.
 
 ### Важно для GitHub Pages
 

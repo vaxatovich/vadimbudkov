@@ -2,8 +2,7 @@
 
 ## 1. Основной production-домен — критически важно
 
-Пока файлы настроены на `https://vaxatovich.github.io/vadimbudkov/`.
-Если основная публичная версия расположена на `*.vercel.app` или собственном домене, используйте именно ее **реальный, проверенный адрес**. Нельзя одновременно оставлять canonical на GitHub Pages и отправлять в Search Console sitemap с адресами Vercel.
+Основной production-адрес сайта: `https://vadimbudkov.vercel.app/`. Canonical, sitemap, robots.txt и JSON-LD должны использовать этот домен. Если впоследствии появится собственный домен, обновите эти URL вместе и настройте 301-редирект.
 
 Перед подачей сайта в индекс синхронизируйте:
 - `index.html` и `about.html`: `<link rel="canonical">`, `og:url`, `og:image`, идентификаторы `@id` в JSON-LD.

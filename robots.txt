@@ -13,7 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-# This sitemap is configured for the GitHub Pages URL.
-# If the production website is on Vercel or a custom domain, update the
-# sitemap URL here, sitemap.xml, and canonical/og URLs together.
-Sitemap: https://vaxatovich.github.io/vadimbudkov/sitemap.xml
+# Main production website: https://vadimbudkov.vercel.app/
+Sitemap: https://vadimbudkov.vercel.app/sitemap.xml
