@@ -1,25 +1,33 @@
-# Вадим Будьков — контент-стратег для криптопроектов
+# Вадим Будьков — контент-маркетинг для криптопроектов
 
-> Персональный сайт о профессиональном опыте в контент-маркетинге криптопроектов, SMM, SEO и GEO.
+> Одностраничное портфолио Вадима Будькова: стратегия и реализация контента для криптопроектов, SMM, SEO, GEO.
 
-- Автор: Вадим Будьков.
-- Работает с контентом с 2019 года.
-- Специализация: контент-стратегия, текстовый и видеоконтент, SMM и развитие аудитории в криптоиндустрии.
-- Текущая работа в криптопроекте — под NDA; название компании не раскрывается.
-- Контакт: https://t.me/borisaguero
+- Создает контент с 2019 года; последние 6 лет фокусируется на криптоиндустрии.
+- Основные направления: контент-стратегия, текстовый и видеоконтент, SMM, развитие сообществ.
+- Текущая работа в криптопроекте под NDA: название компании не публикуется.
+- Контакт в телеграм: https://t.me/borisaguero
 
-## Основные страницы
+## Основной адрес и разделы
+
 - [Главная](https://vadimbudkov.vercel.app/): специализация и контакты.
-- [Обо мне](https://vadimbudkov.vercel.app/about.html): карьерный путь, результаты, скриншоты статистики и примеры контента.
+- [Обо мне](https://vadimbudkov.vercel.app/#about): позиционирование и компетенции.
+- [Результаты в цифрах](https://vadimbudkov.vercel.app/#results): скриншоты метрик Threads, TikTok, блога и YouTube.
+- [Карьерный путь](https://vadimbudkov.vercel.app/#career): обязанности и результаты по проектам.
+- [Примеры контента](https://vadimbudkov.vercel.app/#samples): опубликованные статьи.
+- [Кейсы](https://vadimbudkov.vercel.app/#cases): раздел в разработке.
 
-## Примеры опубликованных материалов
+Якоря служат навигацией по одной HTML-странице и не являются отдельными поисковыми документами.
+
+## Опубликованные материалы
+
 - [ИИ и разработка приложений: проблема с востребованностью](https://vc.ru/ai/2977378-ii-i-razrabotka-prilozheniy-problema-s-vostrebovannostyu)
-- [Гид по маркетингу в Web3 с бюджетом до 10 000 долларов](https://vc.ru/marketing/2788268-gid-po-marketingu-v-web3-s-byudjetom-do-10-000)
+- [Гид по маркетингу в Web3 с бюджетом до $10 000](https://vc.ru/marketing/2788268-gid-po-marketingu-v-web3-s-byudjetom-do-10-000)
 - [Пошаговый план с нуля до первых денег на P2P-арбитраже](https://vc.ru/crypto/685261-poshagovyi-plan-s-nulya-do-pervyh-deneg-na-p2p-arbitrazhe)
 - [Охота на китов: как отслеживать кошельки и движение умных денег](https://nft.ru/article/okhota-na-kitov-kak-otslezhivat-koshelki-i-dvizhenie-umnykh-deneg-975)
 
 ## Публичные профили
+
 - https://www.linkedin.com/in/vadim-budkov-2aa100133/
 - https://vc.ru/id419424
 
-<!-- llms.txt is an optional navigation convention; not an official Google/OpenAI indexing requirement. -->
+<!-- llms.txt is optional; not a Google/OpenAI ranking requirement. -->
