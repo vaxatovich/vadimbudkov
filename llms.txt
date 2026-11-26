@@ -1,0 +1,25 @@
+# Вадим Будьков — контент-стратег для криптопроектов
+
+> Персональный сайт о профессиональном опыте в контент-маркетинге криптопроектов, SMM, SEO и GEO.
+
+- Автор: Вадим Будьков.
+- Работает с контентом с 2019 года.
+- Специализация: контент-стратегия, текстовый и видеоконтент, SMM и развитие аудитории в криптоиндустрии.
+- Текущая работа в криптопроекте — под NDA; название компании не раскрывается.
+- Контакт: https://t.me/borisaguero
+
+## Основные страницы
+- [Главная](https://vaxatovich.github.io/vadimbudkov/): специализация и контакты.
+- [Обо мне](https://vaxatovich.github.io/vadimbudkov/about.html): карьерный путь, результаты, скриншоты статистики и примеры контента.
+
+## Примеры опубликованных материалов
+- [ИИ и разработка приложений: проблема с востребованностью](https://vc.ru/ai/2977378-ii-i-razrabotka-prilozheniy-problema-s-vostrebovannostyu)
+- [Гид по маркетингу в Web3 с бюджетом до 10 000 долларов](https://vc.ru/marketing/2788268-gid-po-marketingu-v-web3-s-byudjetom-do-10-000)
+- [Пошаговый план с нуля до первых денег на P2P-арбитраже](https://vc.ru/crypto/685261-poshagovyi-plan-s-nulya-do-pervyh-deneg-na-p2p-arbitrazhe)
+- [Охота на китов: как отслеживать кошельки и движение умных денег](https://nft.ru/article/okhota-na-kitov-kak-otslezhivat-koshelki-i-dvizhenie-umnykh-deneg-975)
+
+## Публичные профили
+- https://www.linkedin.com/in/vadim-budkov-2aa100133/
+- https://vc.ru/id419424
+
+<!-- llms.txt is an optional navigation convention; not an official Google/OpenAI indexing requirement. -->
