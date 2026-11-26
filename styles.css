@@ -597,3 +597,41 @@ body{overflow-x:clip}
  html{scroll-behavior:auto}
  .publications-chapter .article-card{transition:none}
 }
+
+
+/* Portfolio accessibility, readable profile and responsive anchor navigation. */
+:root{scroll-padding-top:16px}
+#main,#home,#about,#results,#career,#samples,#cases{scroll-margin-top:0}
+.profile-summary{padding:30px max(24px,5vw) 18px;background:url("assets/crayon-paper.svg") center/600px 420px,#fffdfa}
+.profile-summary-inner{max-width:1080px;margin:auto;border:3px dashed #a780e9;border-radius:23px 18px 26px 19px;background:rgba(255,254,250,.9);padding:clamp(18px,3vw,32px);box-shadow:4px 5px 0 rgba(124,78,192,.09)}
+.profile-summary h2{margin:0 0 12px;color:#5328c9;font-size:clamp(26px,3vw,40px);line-height:1.15;font-weight:900;text-wrap:balance}
+.profile-summary p{font-size:clamp(17px,1.65vw,22px);line-height:1.45;color:#49378e;margin:0 0 10px;overflow-wrap:anywhere}
+.profile-summary p:last-child{margin:0}
+.profile-summary a{color:#5328c9;text-decoration-thickness:2px;text-underline-offset:3px;font-weight:700}
+.footer{flex-wrap:wrap}
+.career-card,.career-highlights span,.career-extra article{min-width:0;overflow-wrap:anywhere}
+.career-highlights strong{white-space:normal}
+@media(min-width:821px) and (max-width:1500px){
+ .publications-chapter .article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:820px){
+ :root{scroll-padding-top:78px}
+ .profile-summary{padding:18px 16px 12px}
+ .profile-summary-inner{padding:19px 16px}
+ .site-nav-mobile a:not(.top-contact){display:inline-flex;align-items:center;min-height:44px}
+ .site-nav-mobile a[aria-current="location"]::after{bottom:1px}
+ .socials a{width:44px;height:44px}
+ .career-highlights span{max-width:100%}
+ .chapter-cases .landing-cases-mobile{min-height:65svh}
+}
+@media(max-width:360px){
+ .career-steps{padding-left:33px}
+ .career-number{left:-36px;width:34px;height:34px;font-size:17px}
+ .career-steps::before{left:12px}
+ .career-more{margin-left:33px}
+ .career-card h3{font-size:21px}
+ .chapter-bookmarks a{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){
+ .chapter-bookmarks a:hover,.drawn-button:hover,.proof-card>a:hover img{transform:none}
+}
