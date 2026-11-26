@@ -8,7 +8,7 @@
     },
     {
       "source": "/cases.html",
-      "destination": "/#cases",
+      "destination": "/",
       "permanent": true
     },
     {
