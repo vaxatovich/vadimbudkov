@@ -6,7 +6,7 @@ Production: https://vadimbudkov.vercel.app/
 
 `index.html` — единый лендинг в стиле детских рисунков цветными карандашами.
 
-Якоря: `#home`, `#about`, `#results`, `#career`, `#samples`, `#cases`.
+Якоря: `#home`, `#about`, `#results`, `#career`, `#samples`.
 
 На странице сохранены утвержденные иллюстрации, оригинальные скриншоты результатов, карьерная хронология и ссылки на статьи.
 
@@ -14,13 +14,13 @@ Production: https://vadimbudkov.vercel.app/
 
 `assets/` — все исходные изображения и карандашные текстуры.
 
-`about.html`, `cases.html` — резервные клиентские перенаправления на якоря основного лендинга.
+`about.html`, `cases.html` — резервные клиентские перенаправления: раздел «Обо мне» на `/#about`, прежняя страница кейсов на `/` (отдельного раздела `#cases` нет).
 
 `vercel.json` — постоянные серверные перенаправления со старых URL на новый лендинг.
 
 `sitemap.xml` — только единственная индексируемая страница `/`.
 
-`robots.txt` — Googlebot, Bingbot, OAI-SearchBot разрешены.
+`robots.txt` — открывает доступ Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot и PerplexityBot.
 
 `llms.txt` — необязательное описание сайта и ссылки.
 

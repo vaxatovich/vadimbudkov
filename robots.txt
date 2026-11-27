@@ -1,5 +1,5 @@
-# Search crawlers can access public pages and site assets.
-# Do not block noindex pages here: crawlers must read their HTML noindex tag.
+# Public one-page portfolio. Search crawlers can fetch the HTML and assets.
+# No pages are blocked by robots.txt; legacy redirects are handled by Vercel.
 
 User-agent: Googlebot
 Allow: /
@@ -7,11 +7,21 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# Search and user-directed retrieval crawlers
 User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# All other crawlers use the same public access policy.
 User-agent: *
 Allow: /
 
-# Main production website: https://vadimbudkov.vercel.app/
 Sitemap: https://vadimbudkov.vercel.app/sitemap.xml

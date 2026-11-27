@@ -2,16 +2,16 @@
 
 Production: https://vadimbudkov.vercel.app/
 
-На основном URL находится весь контент. Разделы `#home`, `#about`, `#results`, `#career`, `#samples`, `#cases` — якоря, а не самостоятельные индексируемые URL.
+На основном URL находится весь контент. Разделы `#home`, `#about`, `#results`, `#career`, `#samples` — якоря, а не самостоятельные индексируемые URL.
 
 ## Индексация
 
 - В `sitemap.xml` указывать только https://vadimbudkov.vercel.app/
 - Главная должна отвечать HTTP 200 и содержать canonical на этот URL.
-- `robots.txt` разрешает Googlebot, Bingbot, OAI-SearchBot и остальных.
-- `vercel.json` перенаправляет старые `/about.html` и `/cases.html` на разделы основной страницы.
+- `robots.txt` явно разрешает Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot и PerplexityBot, а также остальных через `User-agent: *`.
+- `vercel.json` перенаправляет `/about.html` на `/#about`, а `/cases.html` на `/`, поскольку раздела `#cases` в HTML пока нет.
 - Проверить редирект `/index.html` → `/`.
-- Единственное содержимое `#cases` пока заглушка; его отдельной индексации нет.
+- Раздела `#cases` на главной пока нет. Ссылки на отсутствующий якорь удалены.
 
 ## Google Search Console
 
@@ -28,7 +28,7 @@ Production: https://vadimbudkov.vercel.app/
 - Разделы доступны при отключенном JavaScript: ссылки-якоря — стандартные HTML.
 - На мобильном экране отображается одна закрепленная навигация.
 - Скриншоты оригинальные и кликабельные.
-- JSON-LD Person, WebSite, ProfilePage указывают на основной URL.
+- JSON-LD Person, WebSite, ProfilePage указывают на основной URL и взаимно связывают профиль с персоной.
 - Старые адреса не остаются индексируемыми дублями.
 
 Для будущих подробных кейсов и исследований можно создать отдельные индексируемые URL. Якоря не заменяют полноценные документы для поиска.
